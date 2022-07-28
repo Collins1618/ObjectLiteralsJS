@@ -7,13 +7,13 @@ let user = {
     location: 'berlin',
     blogs: ['why mac & cheese rules', '10 things to make with marmite'],
     //the name of this method is login, and the value is what it does
-    login: function(){
+    login(){
         console.log("the user logged in");
     },
-    logout: function(){
+    logout(){
         console.log("the user logged out");
     },
-    logBlogs: function(){
+    logBlogs(){
         console.log(this.blogs);
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
