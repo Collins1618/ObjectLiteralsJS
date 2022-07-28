@@ -1,5 +1,13 @@
 //Object literals
 
+//storing objects inside arrays
+const blogs = [
+    {title: 'why mac & cheese rules', likes: 30},
+    {title: '10 things to make with marmite', likes: 50}
+];
+
+console.log(blogs);
+
 let user = {
     name: 'crystal',
     age: 30,
