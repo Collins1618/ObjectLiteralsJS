@@ -1,19 +1,22 @@
 //Object literals
 
 //storing objects inside arrays
-const blogs = [
-    {title: 'why mac & cheese rules', likes: 30},
-    {title: '10 things to make with marmite', likes: 50}
-];
+// const blogs = [
+//     {title: 'why mac & cheese rules', likes: 30},
+//     {title: '10 things to make with marmite', likes: 50}
+// ];
 
-console.log(blogs);
+// console.log(blogs);
 
 let user = {
     name: 'crystal',
     age: 30,
     email: 'cystal@thenetninja.co.uk',
     location: 'berlin',
-    blogs: ['why mac & cheese rules', '10 things to make with marmite'],
+    blogs: [
+        {title: 'why mac & cheese rules', likes: 30},
+        {title: '10 things to make with marmite', likes: 50}
+    ],
     //the name of this method is login, and the value is what it does
     login(){
         console.log("the user logged in");
@@ -25,7 +28,7 @@ let user = {
         console.log(this.blogs);
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         })
     }
 };
